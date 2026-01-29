@@ -1,0 +1,72 @@
+-------------------------------------------------------------------------------
+Test set: com.banking.Level1Test
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 0, Errors: 17, Skipped: 0, Time elapsed: 0.061 s <<< FAILURE! - in com.banking.Level1Test
+testTransferUpdatesAccounts  Time elapsed: 0.021 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransferUpdatesAccounts(Level1Test.java:118)
+
+testTransferZeroAmount  Time elapsed: 0 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransferZeroAmount(Level1Test.java:165)
+
+testTransferToNonExistentAccount  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransferToNonExistentAccount(Level1Test.java:156)
+
+testCreateAccount  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testCreateAccount(Level1Test.java:34)
+
+testTransferFromNonExistentAccount  Time elapsed: 0 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransferFromNonExistentAccount(Level1Test.java:148)
+
+testDepositToNonExistentAccount  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.UnsupportedOperationException: deposit not implemented yet
+	at com.banking.Level1Test.testDepositToNonExistentAccount(Level1Test.java:80)
+
+testComplexTransactionSequence  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testComplexTransactionSequence(Level1Test.java:202)
+
+testCreateDuplicateAccount  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testCreateDuplicateAccount(Level1Test.java:41)
+
+testTransferInsufficientFunds  Time elapsed: 0 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransferInsufficientFunds(Level1Test.java:136)
+
+testTransferExactBalance  Time elapsed: 0 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransferExactBalance(Level1Test.java:187)
+
+testDepositZeroAmount  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testDepositZeroAmount(Level1Test.java:87)
+
+testDepositNegativeAmount  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testDepositNegativeAmount(Level1Test.java:95)
+
+testDeposit  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testDeposit(Level1Test.java:59)
+
+testTransferNegativeAmount  Time elapsed: 0 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransferNegativeAmount(Level1Test.java:176)
+
+testMultipleDeposits  Time elapsed: 0 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testMultipleDeposits(Level1Test.java:69)
+
+testTransfer  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransfer(Level1Test.java:105)
+
+testCreateMultipleAccounts  Time elapsed: 0 s  <<< ERROR!
+java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testCreateMultipleAccounts(Level1Test.java:49)
+

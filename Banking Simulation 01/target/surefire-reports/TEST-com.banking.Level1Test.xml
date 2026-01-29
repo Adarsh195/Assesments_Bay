@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.banking.Level1Test" time="0.061" tests="17" errors="17" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/adarshsinghai/Documents/Interview-Prep/Ebay/Ebay Simulations/Banking Simulation 01/target/test-classes:/Users/adarshsinghai/Documents/Interview-Prep/Ebay/Ebay Simulations/Banking Simulation 01/target/classes:/Users/adarshsinghai/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/Users/adarshsinghai/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/adarshsinghai/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar:/Users/adarshsinghai/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/adarshsinghai/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/Users/adarshsinghai/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar:/Users/adarshsinghai/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.3/junit-jupiter-params-5.9.3.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/adarshsinghai/Documents/Interview-Prep/Ebay/Ebay Simulations/Banking Simulation 01/target/surefire/surefirebooter5519283486984118178.jar /Users/adarshsinghai/Documents/Interview-Prep/Ebay/Ebay Simulations/Banking Simulation 01/target/surefire 2026-01-29T01-19-51_550-jvmRun1 surefire13054775035452435321tmp surefire_013711888727895329732tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="Level1Test"/>
+    <property name="surefire.test.class.path" value="/Users/adarshsinghai/Documents/Interview-Prep/Ebay/Ebay Simulations/Banking Simulation 01/target/test-classes:/Users/adarshsinghai/Documents/Interview-Prep/Ebay/Ebay Simulations/Banking Simulation 01/target/classes:/Users/adarshsinghai/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/Users/adarshsinghai/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/adarshsinghai/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar:/Users/adarshsinghai/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/adarshsinghai/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/Users/adarshsinghai/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar:/Users/adarshsinghai/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.3/junit-jupiter-params-5.9.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/adarshsinghai"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/adarshsinghai/Documents/Interview-Prep/Ebay/Ebay Simulations/Banking Simulation 01"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/adarshsinghai/Documents/Interview-Prep/Ebay/Ebay Simulations/Banking Simulation 01/target/surefire/surefirebooter5519283486984118178.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="25.0.1"/>
+    <property name="user.name" value="adarshsinghai"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/adarshsinghai/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/km/4ggj_cwj6q550__kmhqhq9gc0000gn/T/"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="/Users/adarshsinghai/Documents/Interview-Prep/Ebay/Ebay Simulations/Banking Simulation 01"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/adarshsinghai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="25.0.1"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="testTransferUpdatesAccounts" classname="com.banking.Level1Test" time="0.021">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransferUpdatesAccounts(Level1Test.java:118)
+</error>
+  </testcase>
+  <testcase name="testTransferZeroAmount" classname="com.banking.Level1Test" time="0">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransferZeroAmount(Level1Test.java:165)
+</error>
+  </testcase>
+  <testcase name="testTransferToNonExistentAccount" classname="com.banking.Level1Test" time="0.002">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransferToNonExistentAccount(Level1Test.java:156)
+</error>
+  </testcase>
+  <testcase name="testCreateAccount" classname="com.banking.Level1Test" time="0.003">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testCreateAccount(Level1Test.java:34)
+</error>
+  </testcase>
+  <testcase name="testTransferFromNonExistentAccount" classname="com.banking.Level1Test" time="0">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransferFromNonExistentAccount(Level1Test.java:148)
+</error>
+  </testcase>
+  <testcase name="testDepositToNonExistentAccount" classname="com.banking.Level1Test" time="0.002">
+    <error message="deposit not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: deposit not implemented yet
+	at com.banking.Level1Test.testDepositToNonExistentAccount(Level1Test.java:80)
+</error>
+  </testcase>
+  <testcase name="testComplexTransactionSequence" classname="com.banking.Level1Test" time="0.001">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testComplexTransactionSequence(Level1Test.java:202)
+</error>
+  </testcase>
+  <testcase name="testCreateDuplicateAccount" classname="com.banking.Level1Test" time="0.001">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testCreateDuplicateAccount(Level1Test.java:41)
+</error>
+  </testcase>
+  <testcase name="testTransferInsufficientFunds" classname="com.banking.Level1Test" time="0">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransferInsufficientFunds(Level1Test.java:136)
+</error>
+  </testcase>
+  <testcase name="testTransferExactBalance" classname="com.banking.Level1Test" time="0">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransferExactBalance(Level1Test.java:187)
+</error>
+  </testcase>
+  <testcase name="testDepositZeroAmount" classname="com.banking.Level1Test" time="0.001">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testDepositZeroAmount(Level1Test.java:87)
+</error>
+  </testcase>
+  <testcase name="testDepositNegativeAmount" classname="com.banking.Level1Test" time="0.002">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testDepositNegativeAmount(Level1Test.java:95)
+</error>
+  </testcase>
+  <testcase name="testDeposit" classname="com.banking.Level1Test" time="0.001">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testDeposit(Level1Test.java:59)
+</error>
+  </testcase>
+  <testcase name="testTransferNegativeAmount" classname="com.banking.Level1Test" time="0">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransferNegativeAmount(Level1Test.java:176)
+</error>
+  </testcase>
+  <testcase name="testMultipleDeposits" classname="com.banking.Level1Test" time="0">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testMultipleDeposits(Level1Test.java:69)
+</error>
+  </testcase>
+  <testcase name="testTransfer" classname="com.banking.Level1Test" time="0.003">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testTransfer(Level1Test.java:105)
+</error>
+  </testcase>
+  <testcase name="testCreateMultipleAccounts" classname="com.banking.Level1Test" time="0">
+    <error message="createAccount not implemented yet" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: createAccount not implemented yet
+	at com.banking.Level1Test.testCreateMultipleAccounts(Level1Test.java:49)
+</error>
+  </testcase>
+</testsuite>

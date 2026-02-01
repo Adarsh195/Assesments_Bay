@@ -93,6 +93,7 @@ public class BankingSystemImpl implements BankingSystem {
             if (fromAcc.balance <amount) {
                 return Optional.empty();
             }
+            
             fromAcc.balance -= amount;
             toAcc.balance += amount;
             fromAcc.transactionList.add(fromTrans);

@@ -1,7 +1,6 @@
 package com.banking;
 
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 /**
  * Banking System Implementation
@@ -14,16 +13,40 @@ import java.util.Optional;
  * 3. Make sure to handle all edge cases mentioned in the interface documentation
  * 4. Run tests level by level: mvn test -Dtest=Level1Test, etc.
  */
+class Transaction {
+    boolean isSender;
+    int timestamp;
+    String fromId;
+    String toId;
+    int amount;
+
+    public Transaction(int timestamp, String fromId, String toId, int amount, boolean isSender) {
+        this.timestamp = timestamp;
+        this.fromId = fromId;
+        this.toId = toId;
+        this.amount = amount;
+        this.isSender = isSender;
+    }
+}
+class Account {
+    int timestamp;
+    String accountId;
+    int balance;
+    List<Transaction> transactionList;
+
+    public Account(int timestamp, String accountId, int balance) {
+        this.timestamp = timestamp;
+        this.accountId = accountId;
+        this.balance = balance;
+        transactionList = new ArrayList<>();
+    }
+}
 public class BankingSystemImpl implements BankingSystem {
     
-    // TODO: Add your data structures here
-    // Example:
-    // private Map<String, Account> accounts = new HashMap<>();
-    // private List<Transaction> transactions = new ArrayList<>();
-    // private Map<String, ScheduledPayment> scheduledPayments = new HashMap<>();
-    // private int paymentCounter = 0;
-    
+
+    Map<String, Account> accountMap;
     public BankingSystemImpl() {
+        accountMap = new HashMap<>();
         // Initialize your data structures
     }
     
@@ -31,29 +54,61 @@ public class BankingSystemImpl implements BankingSystem {
     
     @Override
     public boolean createAccount(String accountId, int timestamp) {
+        if (accountMap.containsKey(accountId)) {
+            return false;
+        }
+        Account newOne = new Account(timestamp, accountId, 0);
+        accountMap.put(accountId, newOne);
+        return true;
         // TODO: Implement account creation
         // Return false if account already exists
         // Return true if account was successfully created
-        throw new UnsupportedOperationException("createAccount not implemented yet");
+//        throw new UnsupportedOperationException("createAccount not implemented yet");
     }
     
     @Override
     public Optional<Integer> deposit(String accountId, int timestamp, int amount) {
+        if (!accountMap.containsKey(accountId) || amount <= 0) {
+            return Optional.empty();
+        }
+        Account existing = accountMap.get(accountId);
+        Transaction transaction = new Transaction(timestamp, accountId, accountId, amount, false);
+        existing.transactionList.add(transaction);
+        existing.balance += amount;
+        accountMap.put(accountId, existing);
+        return Optional.of(existing.balance);
         // TODO: Implement deposit
         // Return empty Optional if account doesn't exist or amount is not positive
         // Return Optional with new balance if successful
-        throw new UnsupportedOperationException("deposit not implemented yet");
+//        throw new UnsupportedOperationException("deposit not implemented yet");
     }
     
     @Override
     public Optional<Integer> transfer(String fromId, String toId, int timestamp, int amount) {
+        if (accountMap.containsKey(fromId) && accountMap.containsKey(toId) && amount > 0) {
+            Account fromAcc = accountMap.get(fromId);
+            Account toAcc = accountMap.get(toId);
+            Transaction fromTrans = new Transaction(timestamp, fromId, toId, amount, true);
+            Transaction toTrans = new Transaction(timestamp, fromId, toId, amount, false);
+            if (fromAcc.balance <amount) {
+                return Optional.empty();
+            }
+            fromAcc.balance -= amount;
+            toAcc.balance += amount;
+            fromAcc.transactionList.add(fromTrans);
+            toAcc.transactionList.add(toTrans);
+            accountMap.put(fromId, fromAcc);
+            accountMap.put(toId, toAcc);
+            return Optional.of(fromAcc.balance);
+        }
+        return Optional.empty();
         // TODO: Implement transfer
         // Return empty Optional if:
         //   - Either account doesn't exist
         //   - Amount is not positive
         //   - Insufficient funds in source account
         // Return Optional with new balance of source account if successful
-        throw new UnsupportedOperationException("transfer not implemented yet");
+//        throw new UnsupportedOperationException("transfer not implemented yet");
     }
     
     // ========== LEVEL 2: Ranking ==========
